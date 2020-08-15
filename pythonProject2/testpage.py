@@ -1,8 +1,6 @@
 import unittest
 from locators import *
 from selenium import webdriver
-import chromedriver_binary
-import time
 from keywords import Keywords
 
 
@@ -18,10 +16,15 @@ class createEmail(unittest.TestCase, Keywords):
 
 
     def test_email_reg(self):
+
         self.driver.get("http://automationpractice.com/")
+
         self.clickBtn(Login_Page.login_tab)
+
         self.checkElementPresence(Login_Page.login_page_check)
+
         self.inputText(Login_Page.login_email_box)
+
         self.clickBtn(Login_Page.login_email_submit)
 
 
