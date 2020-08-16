@@ -1,7 +1,12 @@
 import unittest
 from locators import *
 from selenium import webdriver
+<<<<<<< HEAD
+=======
+import time
+>>>>>>> renzo_branch
 from keywords import Keywords
+from selenium.webdriver.support import expected_conditions as EC
 
 
 
@@ -30,3 +35,6 @@ class createEmail(unittest.TestCase, Keywords):
 
     def tearDown(self):
         self.driver.close()
+
+if __name__ == '__main__':
+    unittest.main()
