@@ -1,9 +1,9 @@
 import unittest
 from locators import *
 from selenium import webdriver
-import chromedriver_binary
 import time
 from keywords import Keywords
+from selenium.webdriver.support import expected_conditions as EC
 
 
 
@@ -27,3 +27,6 @@ class createEmail(unittest.TestCase, Keywords):
 
     def tearDown(self):
         self.driver.close()
+
+if __name__ == '__main__':
+    unittest.main()
