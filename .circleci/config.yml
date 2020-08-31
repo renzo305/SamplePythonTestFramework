@@ -13,7 +13,7 @@ jobs:
       - python/save-cache
       - run:
           command: pytest -v -s test_page.py
-          name: Test Email Creation
+          name: Test
 
 workflows:
   main:
