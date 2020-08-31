@@ -7,7 +7,6 @@ class Keywords:
         self.options = webdriver.ChromeOptions()
         self.options.add_argument("--incognito")
         self.driver = webdriver.Chrome(executable_path="D:\Chromedriver\chromedriver.exe", options=self.options)
-        self.wait = WebDriverWait(self.driver, 10)
 
 
     def inputText(self, fieldXpath):
@@ -23,3 +22,4 @@ class Keywords:
         # self.wait.until(EC._element_if_visible(By.xpath(fieldXpath)))
         time.sleep(5)
         self.driver.find_element_by_xpath(fieldXpath)
+
