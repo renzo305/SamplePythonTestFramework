@@ -17,7 +17,9 @@ class createEmail(unittest.TestCase, Keywords):
     def setUp(self):
         self.options = webdriver.ChromeOptions()
         self.options.add_argument("--incognito")
-        self.driver = webdriver.Chrome(executable_path="D:\Chromedriver\chromedriver.exe", options=self.options)
+        self.driver = webdriver.Chrome(executable_path="\Chromedriver\chromedriver.exe", options=self.options)
+        self.options.add_argument('--ignore-certificate-errors')
+        self.options.add_argument("--test-type")
         self.driver.maximize_window()
 
 
